@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>About Me | pjgr.dev</title>
+    <meta name="description" content="Peter Richards' Website">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="">
+</head>
+
+<body>
+    <div class="main">
+        <header>
+            <div class="nav-container">
+                <div class="nav-flex-container">
+                    <div class="site-title-container">
+                        <a class="site-title" href="/">Peter Richards</a>
+                    </div>
+                    <div class="nav-links-container">
+                        <a class="nav-links" href="/about">About</a>
+                        <a class="nav-links" href="/contact">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="about-container">
+            <h1 class="about-title">About Me 👋</h1>
+            <p class="about-paragraphs">
+                <p id="paragraph-1">Hey, I'm <strong>Peter Richards</strong>! During the day, I'm a Jewelry Repair Consultant at Fast-Fix Jewelry & Watch Repairs, where I bring my passions to the world of jewelry restoration. Beyond the service counter, I find my passion in coding, particularly with <strong>HTML and CSS</strong>. <br> <br> Currently, I've immersed myself in the world of <strong>JavaScript</strong>, eager to expand my coding horizons. Balancing the evolving world of coding with the intricacy of repair consulting is a fulfilling journey that defines my professional versatility and values.</p>
+            <div class="about-img">
+                <img src="{{url_for('static', filename='about-img.jpg')}}" alt="Photo of me">
+            </div>
+        </section>
+
+        <footer>© 2023 Peter Richards</footer>
+    </div>
+</body>
+
+</html>
