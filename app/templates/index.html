@@ -7,7 +7,7 @@
     <title>Home | pjgr.dev</title>
     <meta name="description" content="Peter Richards' Website">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/app/static/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <link rel="icon" type="image/x-icon" href="">
 </head>
@@ -29,62 +29,69 @@
         </header>
 
         <section class="about-me-container">
-            <img class="about-me-img" src="{{url_for('static', filename='logo.png')}}" alt="Peter Image">
+            <img class="about-me-img" src="/app/static/about-me.png" alt="Peter Image">
             <span id="about-peter-link"><span class="about-peter-link"><a href="/about">Hi, I'm Peter!</a></span>
-                <span id="about-peter-description">I am a highschool student with a passion for Technology.</span>
+                <span id="about-peter-description">I am a Senior at the University of North Texas with a passion for Accounting.</span>
 
-                <nav class="social-container">
-                    <a class="social-github" href="https://github.com/ptr06" target="_blank" rel="noopener noreferrer">
+                <!-- <nav class="social-container">
+                    <a class="social-github" href="https://github.com/PacketPeter" target="_blank" rel="noopener noreferrer">
                         <i class="fab fa-github"></i>
                         Github
                     </a>
-                    <a class="social-linkedin" href="https://www.linkedin.com/in/peter-richards-webdev" target="_blank"
+                    <a class="social-linkedin" href="https://www.linkedin.com/in/peter-jg-richards/" target="_blank"
                         rel="noopener noreferrer">
                         <i class="fab fa-linkedin"></i>
                         LinkedIn
                     </a>
-                </nav>
+                </nav> -->
             </span>
         </section>
 
-        <section class="project">
-            <div class="project-link-container">
-                <a class="project-link" href="https://peakpass.pkrm.dev/" target="_blank" rel="noopener noreferrer">
-                    <img src="{{url_for('static', filename='peakpass-logo.png')}}" alt="PeakPass">
-                    PeakPass
+        <header class="experience-header-section">
+          <div class="experience-header">
+            <h1 id="my-experience">My Experience</h1>
+          </div>
+        </header>
+
+        <section class="experience">
+            <div class="experience-link-container">
+                <a class="experience-link" id="ey-intern" href="https://www.linkedin.com/feed/update/urn:li:activity:7456856972789788672/" target="_blank" rel="noopener noreferrer">
+                    Incoming Ernst & Young (EY) Intern
                 </a>
             </div>
-            <h2 class="project-info">Nov. 1st 2022 ● <a href="https://github.com/PeakPass/PeakPass" target="_blank"
-                    rel="noopener noreferrer">GitHub</a>
+            <h2 class="experience-info">Tax Winter 2027 | <a href="https://github.com/PeakPass/PeakPass" target="_blank"
+                    rel="noopener noreferrer">Fort Worth, TX  </a>
             </h2>
-            <p class="project-description">PeakPass is a password manager that also doubles as a tool to check
-                your passwords against those that have been affected in previous data breaches. Along with this
-                we offer a blog to teach users about online standards that help to keep them safe when using the
-                internet.</p>
-            <p class="project-description">This is our submission that won 2nd place in the
-                <a id="cac-link" href="https://www.congressionalappchallenge.us/" target="_blank"
-                    rel="noopener noreferrer">2022 Congressional App Challenge Competition</a>.
-                It has been open sourced for transparency.
-            </p>
+            <p class="experience-description">Eager to apply academic knowledge in taxation and accounting to real-world client engagements within one of the world's leading professional services firms.</p>
         </section>
 
-        <section class="project">
-            <div class="project-link-container">
-                <a class="project-link">
-                    <img id="edustore-img" src="{{url_for('static', filename='edustore-logo.png')}}" alt="EduStore Logo">
-                    EduStore
-                </a>
-            </div>
-            <h2 class="project-info">Nov. 1st 2023
-            </h2>
-            <p class="project-description">EduStore looks to fill a gap in any School District's extensive inventory system. Currently implemented in Mansfield ISD's Technology Department, our program allows this 54 campus school district to easily manage the massive number of items in inventory and get alerted when essential items become low on count. <p class="project-description">Furthermore, EduStore allows admins to keep track of which users are taking out items and constantly observe the number of all parts currently in inventory. Lastly, we've created functionality for school district's to create administrator accounts to add new items to inventory based on their Purchase Order.</p>
-            <p class="project-description">This is our winning submission for the
-                <a id="cac-link" href="https://www.congressionalappchallenge.us/" target="_blank"
-                    rel="noopener noreferrer">2023 Congressional App Challenge Competition</a>.
-            </p>
-        </section>
+        <section class="experience">
+          <div class="experience-link-container">
+              <a class="experience-link" id="fd-agent" href="https://www.linkedin.com/company/embassysuitesdenton/" target="_blank" rel="noopener noreferrer">
+                  Front Desk Agent
+              </a>
+          </div>
+          <h2 class="experience-info">Embassy Suites by Hilton Denton Convention Center | <a href="https://github.com/PeakPass/PeakPass" target="_blank"
+                  rel="noopener noreferrer">Denton, TX  </a>
+          </h2>
+          <p class="experience-description">Greet guests, manage check-ins and check-outs, and provide exceptional customer service to create the best hotel experience possible.</p>
+          <p>Handle reservations, process payments, and assist guests with inquiries, special requests, and hotel amenities</p>
+      </section>
+
+      <section class="experience">
+        <div class="experience-link-container">
+            <a class="experience-link" id="si-leader" href="https://www.linkedin.com/company/embassysuitesdenton/" target="_blank" rel="noopener noreferrer">
+                Supplemental Instruction Leader (SI)
+            </a>
+        </div>
+        <h2 class="experience-info">UNT Ryan College of Business | <a href="https://github.com/PeakPass/PeakPass" target="_blank"
+                rel="noopener noreferrer">Denton, TX  </a>
+        </h2>
+        <p class="experience-description">Facilitate three weekly 50-minute peer-led study sessions for Accounting Principles 1 (Financial Accounting) students to reinforce core financial accounting concepts.</p>
+        <p>Guide collaborative learning, addressing student questions to strengthen understanding and exam readiness.</p>
+    </section>
         <br>
-        <footer>© 2023 Peter Richards</footer>
+        <footer class="footer">© 2026 Peter Richards</footer>
     </div>
 </body>
 </html>

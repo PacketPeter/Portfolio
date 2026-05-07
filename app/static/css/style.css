@@ -1,21 +1,21 @@
 @font-face {
     font-family: Gilroy-Medium;
-    src: url('fonts/Gilroy-Medium.ttf');
+    src: url('/app/static/fonts/Gilroy-Medium.ttf');
 }
 
 @font-face {
     font-family: Gilroy-Regular;
-    src: url('fonts/Gilroy-Regular.ttf');
+    src: url('/app/static/fonts/Gilroy-Regular.ttf');
 }
 
 @font-face {
     font-family: Gilroy-SemiBold;
-    src: url('fonts/Gilroy-SemiBold.ttf');
+    src: url('/app/static/fonts/Gilroy-SemiBold.ttf');
 }
 
 @font-face {
     font-family: Gilroy-SemiBoldItalic;
-    src: url('fonts/Gilroy-SemiBoldItalic.ttf');
+    src: url('/app/static/fonts/Gilroy-SemiBoldItalic.ttf');
 }
 
 * {
@@ -74,8 +74,7 @@ body {
 .nav-container {
     display: block;
     position: relative;
-    padding-top: 1rem;
-    padding-bottom: 2.5rem;
+    margin-top: 1rem;
 }
 
 .nav-flex-container {
@@ -115,7 +114,6 @@ body {
 
 .nav-links-container {
     display: flex;
-    max-width: 34rem;
     font-size: 18px;
     -moz-box-orient: horizontal;
     -moz-box-direction: normal;
@@ -143,13 +141,14 @@ body {
 /* Footer */
 
 footer {
-    position: absolute;
-    bottom: 2rem;
+    position: relative;
     font-family: Gilroy-Regular;
     color: rgb(180, 180, 180);
-    left: 0;
-    right: 0;
     text-align: center;
+}
+
+.footer {
+    padding-bottom: 50px;
 }
 
 @media screen and (max-width: 430px) {
@@ -189,9 +188,8 @@ footer {
 }
 
 #about-peter-link {
-    margin-left: 2.2rem;
+    margin: auto auto auto 2.2rem;
     line-height: 2.7rem;
-    margin-top: 5px;
     font-family: Gilroy-SemiBold;
 }
 
@@ -267,19 +265,32 @@ footer {
     top: 2px;
 }
 
-/* Projects */
+/* Experience header */
 
-.project {
+.experience-header {
+  display: flex;
+  justify-content: left;
+  font-family: Gilroy-SemiBold;
+}
+
+#my-experience {
+  margin: 10px 0;
+  text-decoration: underline;
+}
+
+/* experiences */
+
+.experience {
     margin: 50px 0 50px 0;
 }
 
-.projects-title {
+.experiences-title {
     font-size: 24px;
     font-family: Gilroy-Regular;
     color: rgb(180, 180, 180);
 }
 
-.project-link-container {
+.experience-link-container {
     display: flex;
     max-width: 36rem;
     font-size: 30px;
@@ -292,48 +303,109 @@ footer {
     font-family: Gilroy-SemiBold;
 }
 
-.project-link {
+#ey-intern {
     box-shadow: none;
     color: white;
     letter-spacing: 1.9px;
-}
-
-.project-link:hover {
-    color: rgb(180, 180, 180);
-}
-
-.project-link img {
-    display: inline;
-    width: 30px;
-    height: 30px;
-    color: white;
     position: relative;
-    top: 4px;
+    transition: color .4s ease;
 }
 
-.project-info {
+#ey-intern::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background-color: rgb(255, 230, 0);
+  transition: width .5s ease-out;
+}
+
+#ey-intern:hover {
+  color: rgb(255, 230, 0);
+}
+
+
+#ey-intern:hover::after {
+  width: 100%;
+}
+
+#fd-agent {
+  box-shadow: none;
+  color: white;
+  letter-spacing: 1.9px;
+  position: relative;
+  transition: color .4s ease;
+}
+
+#fd-agent::after {
+content: '';
+position: absolute;
+left: 0;
+bottom: -2px;
+width: 0;
+height: 2px;
+background-color: rgb(37, 150, 190);
+transition: width .5s ease-out;
+}
+
+#fd-agent:hover {
+color: rgb(37, 150, 190);
+}
+
+
+#fd-agent:hover::after {
+width: 100%;
+}
+
+#si-leader {
+  box-shadow: none;
+  color: white;
+  letter-spacing: 1.9px;
+  position: relative;
+  transition: color .4s ease;
+}
+
+#si-leader::after {
+content: '';
+position: absolute;
+left: 0;
+bottom: -2px;
+width: 0;
+height: 2px;
+background-color: rgb(5, 144, 51);
+transition: width .5s ease-out;
+}
+
+#si-leader:hover {
+color: rgb(5, 144, 51);
+}
+
+
+#si-leader:hover::after {
+width: 100%;
+}
+
+.experience-info {
     font-size: 16px;
     font-family: Gilroy-Regular;
     color: rgb(180, 180, 180);
 }
 
 @media screen and (max-width: 770px) {
-    .project-info a {
+    .experience-info a {
         color: white;
         text-decoration: underline;
     }
 }
 
-.project-info a:hover {
+.experience-info a:hover {
     color: white;
 }
 
-.project-description {
+.experience-description {
     margin: 0 0 20px;
-}
-
-.project-description:last-child {
-    margin-bottom: 5rem;
 }
 
 #cac-link {
