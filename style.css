@@ -1,21 +1,21 @@
 @font-face {
     font-family: Gilroy-Medium;
-    src: url('/app/static/fonts/Gilroy-Medium.ttf');
+    src: url('/Gilroy-Medium.ttf');
 }
 
 @font-face {
     font-family: Gilroy-Regular;
-    src: url('/app/static/fonts/Gilroy-Regular.ttf');
+    src: url('/Gilroy-Regular.ttf');
 }
 
 @font-face {
     font-family: Gilroy-SemiBold;
-    src: url('/app/static/fonts/Gilroy-SemiBold.ttf');
+    src: url('/Gilroy-SemiBold.ttf');
 }
 
 @font-face {
     font-family: Gilroy-SemiBoldItalic;
-    src: url('/app/static/fonts/Gilroy-SemiBoldItalic.ttf');
+    src: url('/Gilroy-SemiBoldItalic.ttf');
 }
 
 * {
