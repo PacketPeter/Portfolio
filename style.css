@@ -385,7 +385,7 @@ width: 100%;
     grid-area: paragraph;
 }
 
-@media screen and (max-width: 730px) {
+@media screen and (max-width: 480px) {
   #paragraph-1 {
     margin-bottom: 0;
   }
@@ -405,7 +405,7 @@ width: 100%;
   display: none;
 }
 
-@media screen and (max-width: 730px) {
+@media screen and (max-width: 480px) {
     .resume-pdf {
         display: none;
     }
