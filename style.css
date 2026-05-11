@@ -185,6 +185,7 @@ footer {
     width: 142px;
     height: 142px;
     min-width: 142px;
+    border: 2px white solid;
 }
 
 #about-peter-link {
@@ -202,7 +203,30 @@ footer {
 }
 
 .about-peter-link:hover {
-    text-decoration: underline;
+    color: rgb(42, 130, 177);
+}
+
+.about-peter-link {
+  box-shadow: none;
+  color: white;
+  letter-spacing: 1.9px;
+  position: relative;
+  transition: color .4s ease;
+}
+
+.about-peter-link::after {
+content: '';
+position: absolute;
+left: 0;
+bottom: -2px;
+width: 0;
+height: 2px;
+background-color: rgb(0, 114, 177);
+transition: width .5s ease-out;
+}
+
+.about-peter-link:hover::after {
+width: 100%;
 }
 
 #about-peter-description {
@@ -228,41 +252,6 @@ footer {
         justify-content: center;
         align-items: center;
     }
-}
-
-.social-github {
-    box-shadow: none;
-    color: rgb(212, 212, 212);
-}
-
-.social-github:hover {
-    box-shadow: none;
-    color: white;
-}
-
-.social-github i {
-    color: white;
-    position: relative;
-    top: 2px;
-}
-
-.social-linkedin:hover {
-    box-shadow: none;
-    margin-left: 1.65rem;
-    color: white;
-}
-
-.social-linkedin {
-    box-shadow: none;
-    margin-left: 1.65rem;
-    color: rgb(212, 212, 212);
-}
-
-.social-linkedin i {
-    color: white;
-    font-size: 20px;
-    position: relative;
-    top: 2px;
 }
 
 /* Experience header */
@@ -303,7 +292,7 @@ footer {
     font-family: Gilroy-SemiBold;
 }
 
-#ey-intern {
+.experience-link {
     box-shadow: none;
     color: white;
     letter-spacing: 1.9px;
@@ -311,80 +300,42 @@ footer {
     transition: color .4s ease;
 }
 
+.experience-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    transition: width .5s ease-out;
+}
+
+.experience-link:hover::after {
+    width: 100%;
+}
+
 #ey-intern::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: -2px;
-  width: 0;
-  height: 2px;
-  background-color: rgb(255, 230, 0);
-  transition: width .5s ease-out;
+    background-color: rgb(255, 230, 0);
 }
 
 #ey-intern:hover {
-  color: rgb(255, 230, 0);
-}
-
-
-#ey-intern:hover::after {
-  width: 100%;
-}
-
-#fd-agent {
-  box-shadow: none;
-  color: white;
-  letter-spacing: 1.9px;
-  position: relative;
-  transition: color .4s ease;
+    color: rgb(255, 230, 0);
 }
 
 #fd-agent::after {
-content: '';
-position: absolute;
-left: 0;
-bottom: -2px;
-width: 0;
-height: 2px;
-background-color: rgb(37, 150, 190);
-transition: width .5s ease-out;
+    background-color: rgb(37, 150, 190);
 }
 
 #fd-agent:hover {
-color: rgb(37, 150, 190);
-}
-
-
-#fd-agent:hover::after {
-width: 100%;
-}
-
-#si-leader {
-  box-shadow: none;
-  color: white;
-  letter-spacing: 1.9px;
-  position: relative;
-  transition: color .4s ease;
+    color: rgb(37, 150, 190);
 }
 
 #si-leader::after {
-content: '';
-position: absolute;
-left: 0;
-bottom: -2px;
-width: 0;
-height: 2px;
-background-color: rgb(5, 144, 51);
-transition: width .5s ease-out;
+    background-color: rgb(5, 144, 51);
 }
 
 #si-leader:hover {
-color: rgb(5, 144, 51);
-}
-
-
-#si-leader:hover::after {
-width: 100%;
+    color: rgb(5, 144, 51);
 }
 
 .experience-info {
@@ -393,27 +344,12 @@ width: 100%;
     color: rgb(180, 180, 180);
 }
 
-@media screen and (max-width: 770px) {
-    .experience-info a {
-        color: white;
-        text-decoration: underline;
-    }
-}
-
-.experience-info a:hover {
+.experience-info a {
     color: white;
 }
 
 .experience-description {
     margin: 0 0 20px;
-}
-
-#cac-link {
-    text-decoration: underline;
-}
-
-#cac-link:hover {
-    color: rgb(180, 180, 180);
 }
 
 /* About */
