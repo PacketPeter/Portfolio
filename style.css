@@ -156,10 +156,6 @@ footer {
         width: 100%;
         padding-bottom: 25px !important;
     }
-
-    br {
-        display: none;
-    }
 }
 
 /* About Me */
@@ -366,6 +362,7 @@ width: 100%;
     grid-column-gap: 1em;
     align-items: center;
     gap: 1em;
+    margin-top: 40px;
     }
 
 @media screen and (max-width: 730px) {
@@ -388,18 +385,38 @@ width: 100%;
     grid-area: paragraph;
 }
 
-.about-img {
-    grid-area: img;
+@media screen and (max-width: 730px) {
+  #paragraph-1 {
+    margin-bottom: 0;
+  }
+}
+
+.resume-pdf {
     width: clamp(15rem, 80vw, 44.5rem); /* creates a min, percent of viewport size, and max width for the image */
-    justify-self: center; /* centers the image in the column */ 
-    box-shadow: 5px 5px 10px 0px rgba(174,180,194, 0.5); /* Adds gray/white border shadow */
-    -webkit-box-shadow: 5px 5px 10px 0px rgba(174,180,194, 0.5);
-    -moz-box-shadow: 5px 5px 10px 0px rgba(174,180,194, 0.5);
+    justify-self: center; /* centers the image in the column */
+}
+
+.resume-pdf iframe {
+  width: 100%;
+  height: 100vh;
+}
+
+.mobile-text {
+  display: none;
 }
 
 @media screen and (max-width: 730px) {
-    .about-img {
-        margin-bottom: 2.5rem;
+    .resume-pdf {
+        display: none;
+    }
+
+    .mobile-text {
+      display: block;
+    }
+
+    .mobile-text a {
+      font-family: Gilroy-Medium;
+      text-decoration: underline;
     }
 }
 
