@@ -260,7 +260,7 @@ width: 100%;
 
 #my-experience {
   margin: 10px 0;
-  text-decoration: italic;
+  /* font-size: 30px; */
 }
 
 /* experiences */
@@ -277,7 +277,7 @@ width: 100%;
 
 .experience-link-container {
     display: flex;
-    max-width: 36rem;
+    max-width: 100%;
     font-size: 30px;
     -moz-box-orient: horizontal;
     -moz-box-direction: normal;
@@ -389,6 +389,11 @@ width: 100%;
   #paragraph-1 {
     margin-bottom: 0;
   }
+}
+
+#paragraph-1 a {
+    text-decoration: underline;
+    font-weight: bold;
 }
 
 .resume-pdf {
